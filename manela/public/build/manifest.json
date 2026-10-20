@@ -1,0 +1,126 @@
+{
+  "_fonts-C9MNnjVw.css": {
+    "file": "assets/fonts-C9MNnjVw.css",
+    "src": "_fonts-C9MNnjVw.css"
+  },
+  "_instrument-sans-400-normal-D1W7dsQl.woff": {
+    "file": "assets/instrument-sans-400-normal-D1W7dsQl.woff",
+    "src": "_instrument-sans-400-normal-D1W7dsQl.woff"
+  },
+  "_instrument-sans-400-normal-DRC__1Mx.woff2": {
+    "file": "assets/instrument-sans-400-normal-DRC__1Mx.woff2",
+    "src": "_instrument-sans-400-normal-DRC__1Mx.woff2"
+  },
+  "_instrument-sans-500-normal-Dk9ku72i.woff2": {
+    "file": "assets/instrument-sans-500-normal-Dk9ku72i.woff2",
+    "src": "_instrument-sans-500-normal-Dk9ku72i.woff2"
+  },
+  "_instrument-sans-500-normal-Z6ESRlEs.woff": {
+    "file": "assets/instrument-sans-500-normal-Z6ESRlEs.woff",
+    "src": "_instrument-sans-500-normal-Z6ESRlEs.woff"
+  },
+  "_instrument-sans-600-normal-B7fBEWYG.woff2": {
+    "file": "assets/instrument-sans-600-normal-B7fBEWYG.woff2",
+    "src": "_instrument-sans-600-normal-B7fBEWYG.woff2"
+  },
+  "_instrument-sans-600-normal-B9e8oLYv.woff": {
+    "file": "assets/instrument-sans-600-normal-B9e8oLYv.woff",
+    "src": "_instrument-sans-600-normal-B9e8oLYv.woff"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-DIHKVuMD.css",
+    "name": "app",
+    "names": [
+      "app.css"
+    ],
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "resources/css/lm-home.css": {
+    "file": "assets/lm-home-Dbgv5b-b.css",
+    "name": "lm-home",
+    "names": [
+      "lm-home.css"
+    ],
+    "src": "resources/css/lm-home.css",
+    "isEntry": true
+  },
+  "resources/css/san-doces.css": {
+    "file": "assets/san-doces-Dp6FTP2x.css",
+    "name": "san-doces",
+    "names": [
+      "san-doces.css"
+    ],
+    "src": "resources/css/san-doces.css",
+    "isEntry": true
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BvRk9kiK.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "resources/js/cadastro_produto.js": {
+    "file": "assets/cadastro_produto-DnRh7V3c.js",
+    "name": "cadastro_produto",
+    "src": "resources/js/cadastro_produto.js",
+    "isEntry": true
+  },
+  "resources/js/cadastro_usuario.js": {
+    "file": "assets/cadastro_usuario-BKZhaYwk.js",
+    "name": "cadastro_usuario",
+    "src": "resources/js/cadastro_usuario.js",
+    "isEntry": true
+  },
+  "resources/js/carrinho.js": {
+    "file": "assets/carrinho-Cd4bX9DG.js",
+    "name": "carrinho",
+    "src": "resources/js/carrinho.js",
+    "isEntry": true
+  },
+  "resources/js/dashboard.js": {
+    "file": "assets/dashboard-eWPx7nKh.js",
+    "name": "dashboard",
+    "src": "resources/js/dashboard.js",
+    "isEntry": true
+  },
+  "resources/js/lm-home.js": {
+    "file": "assets/lm-home-CmcN15YV.js",
+    "name": "lm-home",
+    "src": "resources/js/lm-home.js",
+    "isEntry": true,
+    "dynamicImports": [
+      "resources/js/lm-shirt-viewer.js"
+    ]
+  },
+  "resources/js/lm-shirt-viewer.js": {
+    "file": "assets/lm-shirt-viewer-CJ0D2vbb.js",
+    "name": "lm-shirt-viewer",
+    "src": "resources/js/lm-shirt-viewer.js",
+    "isDynamicEntry": true
+  },
+  "resources/js/login.js": {
+    "file": "assets/login-D9KEKXNd.js",
+    "name": "login",
+    "src": "resources/js/login.js",
+    "isEntry": true
+  },
+  "resources/js/pedidos.js": {
+    "file": "assets/pedidos-3b9iVbgB.js",
+    "name": "pedidos",
+    "src": "resources/js/pedidos.js",
+    "isEntry": true
+  },
+  "resources/js/produtos.js": {
+    "file": "assets/produtos-bsbP2flY.js",
+    "name": "produtos",
+    "src": "resources/js/produtos.js",
+    "isEntry": true
+  },
+  "resources/js/san-doces.js": {
+    "file": "assets/san-doces-KHZov-_V.js",
+    "name": "san-doces",
+    "src": "resources/js/san-doces.js",
+    "isEntry": true
+  }
+}
