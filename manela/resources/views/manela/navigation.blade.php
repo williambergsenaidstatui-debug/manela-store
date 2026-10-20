@@ -6,15 +6,15 @@
         'encomendas' => 'Encomendas',
         'contato' => 'Contato',
     ];
-    $orderUrl = request()->routeIs('san-doces.encomendas') ? '#formulario' : route('san-doces.encomendas');
+    $orderUrl = request()->routeIs('manela.encomendas') ? '#formulario' : route('manela.encomendas');
 @endphp
 
 <header class="site-header">
     <div class="container topbar">
-        <a class="brand" href="{{ route('san-doces.home') }}" aria-label="San Doces — início">SAN<br>DOCES<small>DOCERIA</small></a>
+        <a class="brand" href="{{ route('manela.home') }}" aria-label="San Doces — início">SAN<br>DOCES<small>DOCERIA</small></a>
         <nav class="main-nav" aria-label="Navegação principal">
             @foreach ($navigationLinks as $page => $label)
-                <a href="{{ route('san-doces.'.$page) }}" @if (request()->routeIs('san-doces.'.$page)) class="active" aria-current="page" @endif>{{ $label }}</a>
+                <a href="{{ route('manela.'.$page) }}" @if (request()->routeIs('manela.'.$page)) class="active" aria-current="page" @endif>{{ $label }}</a>
             @endforeach
         </nav>
         <a class="main-btn" href="{{ $orderUrl }}">Fazer pedido <span aria-hidden="true">→</span></a>
@@ -26,12 +26,12 @@
 
 <dialog id="mobile-navigation" class="mobile-navigation" aria-labelledby="mobile-menu-title">
     <div class="mobile-navigation-heading">
-        <div><a class="mobile-navigation-logo" href="{{ route('san-doces.home') }}" aria-label="San Doces — início">SAN<br>DOCES<small>DOCERIA</small></a><h2 id="mobile-menu-title">Explore nossa doceria</h2></div>
+        <div><a class="mobile-navigation-logo" href="{{ route('manela.home') }}" aria-label="San Doces — início">SAN<br>DOCES<small>DOCERIA</small></a><h2 id="mobile-menu-title">Explore nossa doceria</h2></div>
         <button class="mobile-menu-close" type="button" aria-label="Fechar menu">×</button>
     </div>
     <nav class="mobile-navigation-links" aria-label="Navegação mobile">
         @foreach ($navigationLinks as $page => $label)
-            <a href="{{ route('san-doces.'.$page) }}" @if (request()->routeIs('san-doces.'.$page)) aria-current="page" @endif><span aria-hidden="true">•</span><span>{{ $label }}</span></a>
+            <a href="{{ route('manela.'.$page) }}" @if (request()->routeIs('manela.'.$page)) aria-current="page" @endif><span aria-hidden="true">•</span><span>{{ $label }}</span></a>
         @endforeach
     </nav>
     <div class="mobile-navigation-contact">

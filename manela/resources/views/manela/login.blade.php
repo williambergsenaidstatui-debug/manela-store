@@ -27,7 +27,7 @@
         </section>
 
         <section class="auth-content">
-            <a class="auth-back" href="{{ route('san-doces.home') }}">Voltar ao site</a>
+            <a class="auth-back" href="{{ route('manela.home') }}">Voltar ao site</a>
             <div class="auth-note">Porque todo<br>doce comeca<br>com voce!</div>
 
             <div class="auth-heading">
@@ -61,7 +61,7 @@
                 <button class="auth-submit" id="entrar" type="submit"><span class="field-icon user"></span>Entrar</button>
 
                 <div class="auth-divider"><span>ou</span></div>
-                <p class="auth-switch">Ainda nao tem uma conta? <a href="{{ route('san-doces.cadastro_usuario') }}">Faca seu cadastro</a></p>
+                <p class="auth-switch">Ainda nao tem uma conta? <a href="{{ route('manela.cadastro_usuario') }}">Faca seu cadastro</a></p>
             </form>
         </section>
     </main>

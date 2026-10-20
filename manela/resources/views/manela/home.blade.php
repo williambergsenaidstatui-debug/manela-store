@@ -12,25 +12,31 @@
 </head>
 <body id="top">
     <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
-    <div class="wood hero-wrap">
+    <div class="wood editorial-wrap">
         <header class="site-header container">
-            <a class="brand" href="{{ route('san-doces.home') }}" aria-label="LM Estilo Personalizado — início">@include('manela.logo')</a>
+            <a class="brand" href="{{ route('manela.home') }}" aria-label="LM Estilo Personalizado — início">@include('manela.logo')</a>
             <nav class="main-nav" id="main-navigation" aria-label="Navegação principal">
                 <a class="active" href="#inicio" aria-current="page">Início</a>
-                <a href="#linhas">Masculino</a><a href="#linhas">Infantil</a><a href="#colecoes">Coleções</a><a href="#personalizacao">Sobre</a>
+                <a href="{{ route('manela.produtos') }}">produtos</a><a href="#linhas">Masculino</a><a href="#linhas">Infantil</a><a href="#colecoes">Coleções</a><a href="#personalizacao">Sobre</a><a href="{{ route('manela.contato') }}">Contato</a>
             </nav>
             <div class="header-actions">
                 <button class="icon-button" type="button" data-search-toggle aria-label="Buscar produtos" aria-controls="home-search" aria-expanded="false">@include('manela.icon', ['name' => 'search'])</button>
-                <a class="icon-button" href="{{ route('san-doces.login') }}" aria-label="Minha conta">@include('manela.icon', ['name' => 'user'])</a>
-                <a class="icon-button" href="{{ route('san-doces.carrinho') }}" aria-label="Carrinho de compras">@include('manela.icon', ['name' => 'bag'])</a>
+                <a class="icon-button" href="{{ route('manela.login') }}" aria-label="Minha conta">@include('manela.icon', ['name' => 'user'])</a>
+                <a class="icon-button" href="{{ route('manela.carrinho') }}" aria-label="Carrinho de compras">@include('manela.icon', ['name' => 'bag'])</a>
                 <button class="icon-button menu-toggle" type="button" aria-label="Abrir menu" aria-controls="main-navigation" aria-expanded="false">@include('manela.icon', ['name' => 'menu'])</button>
             </div>
         </header>
-        <section class="hero container" id="inicio" aria-labelledby="hero-title">
+    </div>
+    <main id="conteudo">
+    <section class="editorial-hero" id="inicio" aria-label="Coleção LM Estilo Personalizado">
+        <img src="{{ asset('assets/images/lm-editorial-por-do-sol.png') }}" alt="Coleção LM ao pôr do sol, com camisetas preta, branca e caramelo e bermudas da marca" width="1860" height="846" fetchpriority="high">
+    </section>
+    <div class="wood hero-wrap">
+        <section class="hero container" id="camiseta-3d" aria-labelledby="hero-title">
             <div class="hero-copy"><p class="eyebrow">Qualidade · Conforto · Estilo</p><h1 id="hero-title">LM ESTILO<br>PERSONALIZADO</h1><p>Roupas que expressam quem você é.<br>Personalização com qualidade e estilo<br>para o seu dia a dia.</p><a class="button button-outline" href="#colecoes">Ver Coleções <span aria-hidden="true">→</span></a></div>
             <div class="hero-visual hero-shirt" data-shirt-viewer data-model="{{ asset('assets/tshirt.glb') }}" aria-label="Apresentação da camiseta em 3D">
                 <div class="shirt-stage" data-shirt-stage aria-label="Camisa em 3D. Arraste para girar e use os botões para controlar a apresentação.">
-                    <img class="shirt-fallback" src="{{ asset('assets/images/lm-camiseta-preta.png') }}" alt="Camiseta preta LM com o brasão da marca" width="223" height="312" fetchpriority="high">
+                    <img class="shirt-fallback" src="{{ asset('assets/images/lm-camiseta-preta.png') }}" alt="Camiseta preta LM com o brasão da marca" width="223" height="312" loading="lazy">
                 </div>
                 <p class="shirt-status" data-shirt-status role="status">Preparando a camiseta em 3D…</p>
                 <div class="shirt-toolbar" data-shirt-toolbar hidden>
@@ -48,7 +54,6 @@
             </div>
         </section>
     </div>
-    <main id="conteudo">
     <section class="products-section container section-space" id="produtos" aria-labelledby="products-title">
         <div class="section-heading"><div><p class="eyebrow">Nossos produtos</p><h2 id="products-title">Qualidade em cada detalhe.</h2><p>Peças exclusivas, com design moderno e personalização que valoriza o seu estilo.</p></div><a class="button" href="#colecoes">Ver todos <span aria-hidden="true">→</span></a></div>
         <form id="home-search" class="search-form" role="search" hidden><label for="product-search">Encontre seu estilo</label><div><input type="search" id="product-search" placeholder="Busque pelo nome da peça…" autocomplete="off"><button class="icon-button" type="button" data-search-close aria-label="Fechar busca">×</button></div></form>
@@ -74,7 +79,7 @@
     <section class="wood personalization" id="personalizacao" aria-labelledby="personalization-title">
         <div class="personalization-inner container">
             <div class="personalization-photo photo-slot" data-photo="personalizacao"><img src="{{ asset('assets/images/lm-personalizacao-banner.png') }}" alt="Modelo de costas vestindo camiseta preta com o brasão LM em destaque, sob luz dourada e fundo de madeira" width="2012" height="782" loading="lazy" decoding="async"></div>
-            <div class="personalization-copy"><p class="eyebrow">Personalização</p><h2 id="personalization-title">Mais que roupas,<br>identidade.</h2><p>Crie peças únicas com a sua identidade. Personalização com qualidade e acabamento premium, do seu jeito.</p><a class="button button-light" href="{{ route('san-doces.encomendas') }}">Saiba mais <span aria-hidden="true">→</span></a></div>
+            <div class="personalization-copy"><p class="eyebrow">Personalização</p><h2 id="personalization-title">Mais que roupas,<br>identidade.</h2><p>Crie peças únicas com a sua identidade. Personalização com qualidade e acabamento premium, do seu jeito.</p><a class="button button-light" href="{{ route('manela.encomendas') }}">Saiba mais <span aria-hidden="true">→</span></a></div>
             <div class="qualities"><div>@include('manela.icon', ['name' => 'diamond'])<p><strong>Qualidade</strong>em cada detalhe</p></div><div>@include('manela.icon', ['name' => 'shirt'])<p><strong>Estilo que</strong>combina com você</p></div><div>@include('manela.icon', ['name' => 'star'])<p><strong>Personalização</strong>do seu jeito</p></div></div>
         </div>
     </section>
@@ -89,6 +94,6 @@
     <section class="benefits" aria-label="Vantagens LM"><div class="container benefits-grid"><div>@include('manela.icon', ['name' => 'truck'])<p>Envio para<br>todo o Brasil</p></div><div>@include('manela.icon', ['name' => 'card'])<p>Pagamento<br>seguro</p></div><div>@include('manela.icon', ['name' => 'headset'])<p>Atendimento<br>personalizado</p></div><div>@include('manela.icon', ['name' => 'award'])<p>Qualidade<br>garantida</p></div></div></section>
     <section class="wood instagram-section" aria-labelledby="instagram-title"><div class="container instagram-inner"><div class="instagram-copy"><p class="eyebrow">Nosso estilo</p><h2 id="instagram-title">Acompanhe<br>no Instagram.</h2><p>Confira novidades, lançamentos e inspirações de quem faz parte dessa história.</p><a class="button" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Ver no Instagram <span aria-hidden="true">↗</span></a></div><div class="instagram-gallery">@foreach (['lm-camiseta-preta.png' => 'Camiseta preta LM', 'lm-camisetas-colecao.png' => 'Camisetas LM em cinco cores', 'lm-camiseta-caramelo.png' => 'Camiseta caramelo LM', 'lm-personalizacao.png' => 'Estilo e identidade com o brasão LM'] as $photo => $description)<div class="instagram-photo photo-slot" data-photo="instagram-{{ $loop->iteration }}"><img src="{{ asset('assets/images/'.$photo) }}" alt="{{ $description }}" loading="lazy" decoding="async"></div>@endforeach</div></div></section>
     </main>
-    <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="#top" aria-label="LM — voltar ao início">@include('manela.logo')</a><p class="brand-name">LM ESTILO PERSONALIZADO</p><p>Roupas que expressam<br>quem você é.</p><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">@include('manela.icon', ['name' => 'instagram'])</a></div><div><h3>Navegação</h3><nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#linhas">Masculino</a><a href="#linhas">Infantil</a><a href="#colecoes">Coleções</a><a href="#produtos" data-select-filter="acessorios">Acessórios</a><a href="#personalizacao">Sobre a marca</a><a href="{{ route('san-doces.contato') }}">Contato</a></nav></div><div><h3>Ajuda</h3><nav aria-label="Ajuda"><a href="{{ route('san-doces.contato') }}">Perguntas frequentes</a><a href="{{ route('san-doces.contato') }}">Trocas e devoluções</a><a href="{{ route('san-doces.contato') }}">Informações de entrega</a><a href="{{ route('san-doces.contato') }}">Fale com a gente</a></nav></div><div class="footer-contact"><h3>Atendimento</h3><a href="{{ route('san-doces.contato') }}">@include('manela.icon', ['name' => 'headset'])<span>Fale conosco<small>Atendimento personalizado</small></span></a><p>@include('manela.icon', ['name' => 'pin'])<span>Tatuí · SP<small>Atendemos todo o Brasil</small></span></p></div><div class="footer-news"><h3>Vista sua identidade</h3><p>Qualidade, conforto e personalidade em cada peça.</p><a class="button button-outline" href="#colecoes">Explore as coleções <span aria-hidden="true">→</span></a><div class="payment-methods" aria-label="Meios de pagamento">VISA <span>●●</span> elo <span>pix</span></div></div></div><div class="container footer-bottom"><span>© {{ date('Y') }} LM Estilo Personalizado. Todos os direitos reservados.</span><span>Modelo 3D: <a href="https://sketchfab.com/3d-models/tshirt-5a21282b2e454d1696547148f617d3d0" target="_blank" rel="noopener noreferrer">Tabbuso</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · cor adaptada</span><a href="#top">Voltar ao topo ↑</a></div></footer>
+    <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand" href="#top" aria-label="LM — voltar ao início">@include('manela.logo')</a><p class="brand-name">LM ESTILO PERSONALIZADO</p><p>Roupas que expressam<br>quem você é.</p><a class="social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">@include('manela.icon', ['name' => 'instagram'])</a></div><div><h3>Navegação</h3><nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#linhas">Masculino</a><a href="#linhas">Infantil</a><a href="#colecoes">Coleções</a><a href="#produtos" data-select-filter="acessorios">Acessórios</a><a href="#personalizacao">Sobre a marca</a><a href="{{ route('manela.contato') }}">Contato</a></nav></div><div><h3>Ajuda</h3><nav aria-label="Ajuda"><a href="{{ route('manela.contato') }}">Perguntas frequentes</a><a href="{{ route('manela.contato') }}">Trocas e devoluções</a><a href="{{ route('manela.contato') }}">Informações de entrega</a><a href="{{ route('manela.contato') }}">Fale com a gente</a></nav></div><div class="footer-contact"><h3>Atendimento</h3><a href="{{ route('manela.contato') }}">@include('manela.icon', ['name' => 'headset'])<span>Fale conosco<small>Atendimento personalizado</small></span></a><p>@include('manela.icon', ['name' => 'pin'])<span>Tatuí · SP<small>Atendemos todo o Brasil</small></span></p></div><div class="footer-news"><h3>Vista sua identidade</h3><p>Qualidade, conforto e personalidade em cada peça.</p><a class="button button-outline" href="#colecoes">Explore as coleções <span aria-hidden="true">→</span></a><div class="payment-methods" aria-label="Meios de pagamento">VISA <span>●●</span> elo <span>pix</span></div></div></div><div class="container footer-bottom"><span>© {{ date('Y') }} LM Estilo Personalizado. Todos os direitos reservados.</span><span>Modelo 3D: <a href="https://sketchfab.com/3d-models/tshirt-5a21282b2e454d1696547148f617d3d0" target="_blank" rel="noopener noreferrer">Tabbuso</a> · <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> · cor adaptada</span><a href="#top">Voltar ao topo ↑</a></div></footer>
 </body>
 </html>

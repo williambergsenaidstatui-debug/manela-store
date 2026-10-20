@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 200" fill="none">
+  <defs>
+    <filter id="bristles" x="-5%" y="-40%" width="110%" height="180%">
+      <feTurbulence type="fractalNoise" baseFrequency=".025 .3" numOctaves="3" seed="12" result="grain"/>
+      <feDisplacementMap in="SourceGraphic" in2="grain" scale="17" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <mask id="dry-brush">
+      <g stroke="white" filter="url(#bristles)">
+        <path d="M-35 107 Q380 118 790 95 T1635 81" stroke-width="77"/>
+        <path d="M-20 70 Q470 93 975 65 T1620 54" stroke-width="15"/>
+        <path d="M-20 146 Q425 157 840 130 T1620 116" stroke-width="12"/>
+      </g>
+      <g stroke="black" stroke-linecap="round" opacity=".85">
+        <path d="m9 65 98-3m23 3 57-2m35-2 94-1m46-3 126-1m64-2 88-1m127-3 124-2m108-1 86-3m45 0 103-2m76 0 155-5m50 1 107-3" stroke-width="3"/>
+        <path d="m-8 143 132-4m36 1 119-4m41 1 131-4m72 0 94-2m45 1 125-4m99 1 158-4m89 0 107-3m53 1 130-3m32 0 168-5" stroke-width="4"/>
+        <path d="m-3 83 75-1m215 50 62-2m238-57 56-2m379 46 69-2m208-54 96-2m113 47 94-3" stroke-width="2"/>
+        <path d="m12 99 139 3m68 6 82-1m118-12 167-3m91 12 108-4m109-15 142-5m91 19 147-5m90-17 141-2m48 15 152-4" stroke-width="1.5" opacity=".5"/>
+        <path d="m-4 125 83 1m88 8 42-1m143-9 110-2m165-2 94-3m145-10 81-3m120 4 78-3m187-9 56-1m104 1 114-3" stroke-width="2" opacity=".55"/>
+      </g>
+    </mask>
+  </defs>
+  <path fill="#8b857d" mask="url(#dry-brush)" d="M0 0h1600v200H0z"/>
+  <g stroke="#8b857d" stroke-linecap="round" filter="url(#bristles)">
+    <path d="M20 97Q39 67 31 44M43 98Q61 65 66 29M55 108Q82 91 102 63M1518 102Q1547 120 1558 150M1534 102Q1573 119 1585 131" stroke-width="9"/>
+    <path d="m18 77-9-27m70 29 14-30m1430 70 13 35m33-39 30 13" stroke-width="4"/>
+    <path d="m122 61 173 6m38 85 194-3m408-93 156-6m98 75 186-8" stroke-width="3" opacity=".7"/>
+  </g>
+  <g fill="#8b857d">
+    <circle cx="26" cy="22" r="4"/><circle cx="79" cy="18" r="3"/><circle cx="113" cy="43" r="5"/><circle cx="9" cy="69" r="3"/>
+    <circle cx="1565" cy="166" r="5"/><circle cx="1510" cy="177" r="3"/><circle cx="1590" cy="141" r="4"/><circle cx="1489" cy="148" r="3"/>
+  </g>
+</svg>

@@ -28,6 +28,12 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .wood { background-image: linear-gradient(90deg, #080503b3, #160d0340), url('/madeira-escura.png'); background-size: cover; background-position: center; color: var(--paper); }
 .hero-wrap { position: relative; overflow: hidden; border-radius: 0 0 50% 4% / 0 0 5% 2%; padding-bottom: 24px; background: url('/assets/images/fundo-carrossel-lm.png') center / cover no-repeat; }
 .hero-wrap > * { position: relative; z-index: 1; }
+.editorial-wrap { position: relative; z-index: 2; background: #1c130d; }
+.editorial-hero { position: relative; z-index: 1; background: #1c130d; }
+.editorial-hero::after { content: ''; position: absolute; z-index: 2; pointer-events: none; left: 0; right: 0; bottom: 0; height: clamp(65px, 12.5vw, 190px); background: url('/assets/images/lm-editorial-divider.svg') center / 100% 100% no-repeat; transform: translateY(52%); }
+.editorial-hero + .hero-wrap { padding-top: clamp(32px, 4vw, 60px); }
+.editorial-hero img { width: 100%; height: auto; aspect-ratio: 1860 / 846; object-fit: contain; }
+
 .site-header { display: flex; align-items: center; justify-content: space-between; min-height: 106px; gap: 30px; position: relative; z-index: 2; }
 .brand { display: inline-block; color: #f5f4ef; flex-shrink: 0; }
 .brand svg { height: 74px; width: 61px; }

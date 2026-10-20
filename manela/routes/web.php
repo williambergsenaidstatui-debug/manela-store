@@ -4,13 +4,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('manela.home');
-})->name('san-doces.home');
+})->name('manela.home');
 
-Route::view('/produtos', 'san-doces.produtos')->name('san-doces.produtos');
-Route::view('/sobre-nos', 'san-doces.sobre-nos')->name('san-doces.sobre-nos');
-Route::view('/encomendas', 'san-doces.encomendas')->name('san-doces.encomendas');
-Route::view('/contato', 'san-doces.contato')->name('san-doces.contato');
-Route::view('/login-dashboard', 'san-doces.login')->name('san-doces.login');
-Route::view('/cadastro_usuario', 'san-doces.cadastro-user')->name('san-doces.cadastro_usuario');
-Route::view('/dashboard', 'san-doces.dashboard')->name('san-doces.dashboard');
-Route::view('/carrinho', 'san-doces.carrinho')->name('san-doces.carrinho');
+Route::view('/produtos', 'manela.produtos')->name('manela.produtos');
+Route::view('/sobre-nos', 'manela.sobre-nos')->name('manela.sobre-nos');
+Route::view('/encomendas', 'manela.encomendas')->name('manela.encomendas');
+Route::view('/contato', 'manela.contato')->name('manela.contato');
+Route::view('/login-dashboard', 'manela.login')->name('manela.login');
+Route::view('/cadastro_usuario', 'manela.cadastro-user')->name('manela.cadastro_usuario');
+Route::view('/dashboard', 'manela.dashboard')->name('manela.dashboard');
+Route::view('/carrinho', 'manela.carrinho')->name('manela.carrinho');

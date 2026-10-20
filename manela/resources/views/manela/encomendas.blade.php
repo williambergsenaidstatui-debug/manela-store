@@ -14,7 +14,7 @@
 </head>
 
 <body id="top" class="orders-page">
-  @include('san-doces.navigation')
+  @include('manela.navigation')
   <main>
     <section class="hero">
       <div class="container">
@@ -88,8 +88,8 @@
   </main>
   <footer class="sd-footer">
     <div class="sd-footer-main">
-      <div class="sd-footer-intro"><a class="sd-footer-brand" href="{{ route('san-doces.home') }}">SAN<br>DOCES<small>DOCERIA</small></a><p>Doces artesanais feitos com carinho para tornar cada momento ainda mais especial.</p></div>
-      <div><h4>Navegacao</h4><nav class="sd-footer-links" aria-label="Navegacao do rodape"><a href="{{ route('san-doces.home') }}">Inicio</a><a href="{{ route('san-doces.produtos') }}">Produtos</a><a href="{{ route('san-doces.sobre-nos') }}">Sobre nos</a><a href="{{ route('san-doces.encomendas') }}">Encomendas</a><a href="{{ route('san-doces.contato') }}">Contato</a></nav></div>
+      <div class="sd-footer-intro"><a class="sd-footer-brand" href="{{ route('manela.home') }}">SAN<br>DOCES<small>DOCERIA</small></a><p>Doces artesanais feitos com carinho para tornar cada momento ainda mais especial.</p></div>
+      <div><h4>Navegacao</h4><nav class="sd-footer-links" aria-label="Navegacao do rodape"><a href="{{ route('manela.home') }}">Inicio</a><a href="{{ route('manela.produtos') }}">Produtos</a><a href="{{ route('manela.sobre-nos') }}">Sobre nos</a><a href="{{ route('manela.encomendas') }}">Encomendas</a><a href="{{ route('manela.contato') }}">Contato</a></nav></div>
       <div class="sd-footer-contact"><h4>Fale conosco</h4><p>(15) 99144-4740</p><p>@sandoces_confeitaria</p><p>Tatui - SP</p></div>
       <div class="sd-footer-contact"><h4>Horario</h4><p>Segunda a sabado</p><p>Das 14:30 as 23:30</p><a class="sd-footer-cta" href="https://wa.me/5515991444740" target="_blank" rel="noopener">Fazer pedido pelo WhatsApp</a></div>
     </div>

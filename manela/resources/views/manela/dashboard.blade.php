@@ -74,9 +74,9 @@
 
 <body class="dashboard-page">
     <aside class="dash-sidebar">
-        <a class="dash-logo" href="{{ route('san-doces.home') }}">SAN<br>DOCE<small>DOCERIA</small></a>
+        <a class="dash-logo" href="{{ route('manela.home') }}">SAN<br>DOCE<small>DOCERIA</small></a>
         <nav class="dash-menu" aria-label="Menu administrativo">
-            <a class="active" href="{{ route('san-doces.dashboard') }}"><span class="dash-ico">{!! $heroIcon('home') !!}</span>Inicio</a>
+            <a class="active" href="{{ route('manela.dashboard') }}"><span class="dash-ico">{!! $heroIcon('home') !!}</span>Inicio</a>
             <a href="#produtos-admin" data-dashboard-link="produtos"><span class="dash-ico">{!! $heroIcon('cube') !!}</span>Produtos</a>
             <a href="#pedidos-admin" data-dashboard-link="pedidos"><span class="dash-ico">{!! $heroIcon('shopping-bag') !!}</span>Pedidos</a>
             <a href="#mensagens-admin" data-dashboard-link="mensagens"><span class="dash-ico">{!! $heroIcon('chat-bubble') !!}</span>Mensagens</a>
@@ -309,7 +309,7 @@
         </main>
 
         <footer class="dash-footer">
-            <a class="dash-logo small" href="{{ route('san-doces.home') }}">SAN<br>DOCE<small>DOCERIA</small></a>
+            <a class="dash-logo small" href="{{ route('manela.home') }}">SAN<br>DOCE<small>DOCERIA</small></a>
             <p>Obrigada por fazer parte da nossa historia!</p>
             <div>
                 <span>@sandoce_confeitaria</span>

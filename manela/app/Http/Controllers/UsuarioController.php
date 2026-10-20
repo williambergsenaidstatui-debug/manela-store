@@ -11,7 +11,7 @@ class UsuarioController extends Controller
 {
     public function cadastro_usuario_html(): View
     {
-        return view('san-doces.cadastro-user');
+        return view('manela.cadastro-user');
     }
 
     public function cadastro_usuario(Request $request): JsonResponse
